@@ -136,7 +136,9 @@ cartButton.onclick = () => {
     }
   }
 
-  console.log(
-    "The total amount is " + finalDollars + "$ and " + finalCents + " cents"
-  );
+  
+    let message = "The total amount is " + finalDollars + "$ and " + finalCents + " cents"
+    window.open(
+      'https://wa.me/+910000000000?text=' + encodeURIComponent(message)
+    )
 };
